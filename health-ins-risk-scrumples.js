@@ -10,10 +10,8 @@ http.createServer(function (req, res) {
 
 function doCalculations() { 
     age = document.getElementById("ageID").value;
-    height = document.getElementById("heightID").value;
-    weight = document.getElementById("weightID").value;
-    sbp = document.getElementById("spbID").value;
-    dbp = document.getElementById("dpbID").value;
+    console.log("Hello");
+    console.log(age);
 
     if(age < 30) {
       ageRisk = 0;
@@ -22,14 +20,11 @@ function doCalculations() {
       ageRisk = 10;
     }
     else if(age < 60) {
-      ageRisk = 20;
+      ageRisk = 20
     }
-    else {
+    else{
       ageRisk = 30;
     }
-
-    console.log(ageRisk);
-    console.log("Hello");
 
     document.getElementById("ageRiskID").innerHTML = ageRisk;
 }
