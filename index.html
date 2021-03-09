@@ -13,13 +13,6 @@
     <!-- Explanatory header for user to understand program-->
 
     <!-- Fields to enter values-->
-    Age: <input id="ageID" type="number" min="12" max="99"><br>
-    Height (in): <input id="heightID" type="number" min="54" max="84"><br>
-    Weight (lbs): <input id="weightID" type="number" min="80" max="400"><br>
-    Systolic Blood Pressure: <input id="sbpID" type="number" min="50" max="250"><br>
-    Diastolic Blood Pressure: <input id="dpdID" type="number" min="25" max="200"><br>
-    
-
 
 
 
@@ -28,25 +21,47 @@
     <p>Enter the person's age in years: </p>
     <input id="ageID" type="number" min="12" max="99">
     <p>Enter the person's height in inches: </p>
-    <input id="ageID" type="number" min="12" max="99">
+    <input id="heightID" type="number" min="54" max="84">
     <p>Enter the person's weight in pounds: </p>
-    <input id="ageID" type="number" min="12" max="99">
+    <input id="weightID" type="number" min="80" max="400">
     <p>Enter the person's systolic blood pressure: </p>
+    <input id="sbpID" type="number" min="50" max="250">
     <p>Enter the person's diastolic blood pressure: </p>
+    <input id="dpdID" type="number" min="25" max="200">
     <p>Does the person have a family history of ...</p>
+
     <p>Diabetes? </p>
+
+    <input type="checkbox" id="yesDiabetes" name="yes-value" value="yes">
+    <label for="diabetes">Yes</label><br>
+    <input type="checkbox" id="noDiabetes" name="no-value" value="no">
+    <label for="diabetes">No</label><br>
     <p>Cancer? </p>
+
+    <input type="checkbox" id="yesCancer" name="yes-value" value="yes">
+    <label for="cancer">Yes</label><br>
+    <input type="checkbox" id="noCancer" name="no-value" value="no">
+    <label for="cancer">No</label><br>
+
     <p>Alzheimers? </p>
-    <p>Risk scores</p>
-    <p>Age: </p>
-    <p>Body-Mass: </p>
-    <p>Blood Pressure: </p>
-
-
-
+    <input type="checkbox" id="yesAlzheimers" name="yes-value" value="yes">
+    <label for="alzheimers">Yes</label><br>
+    <input type="checkbox" id="noAlzheimers" name="no-value" value="no">
+    <label for="alzheimers">No</label><br>
 
 
     <!-- Button to perform calculations-->
-    <button type="button" onclick="DoCalculations()">Do Calculations</button><br><br>
+    <br><button type="button" onclick="DoCalculations()">Do Calculations</button><br><br>
+
+
+    <!--This needs to use javascript to turn visible and show results after click.-->
+    <p>Risk scores</p>
+    
+    <p>Age: </p>
+
+    <p>Body-Mass: </p>
+
+    <p>Blood Pressure: </p>
+
 </body>
 </html>
