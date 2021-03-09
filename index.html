@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Health Insurance Risk Calculator</title>
+    <script src="health-ins-risk-scrumples.js"></script>
 </head>
 <body>
     <h1>Health Insurance Risk</h1>
@@ -51,13 +52,14 @@
 
 
     <!-- Button to perform calculations-->
-    <br><button type="button" onclick="DoCalculations()">Do Calculations</button><br><br>
+    <br><button onclick="doCalculations()">Do Calculations</button><br><br>
 
 
     <!--This needs to use javascript to turn visible and show results after click.-->
     <p>Risk scores</p>
     
-    <p>Age: </p>
+    Age:<p id="ageRiskID"></p>
+    <!--<p id="ageRiskID">Age: </p>-->
 
     <p>Body-Mass: </p>
 
