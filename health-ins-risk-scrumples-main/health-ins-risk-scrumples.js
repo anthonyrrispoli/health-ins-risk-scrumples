@@ -8,11 +8,14 @@ http.createServer(function (req, res) {
   });
 }).listen(8080);
 
+// function to calculate risk scores by values from the user
+
 function doCalculations() { 
     var age = document.getElementById("ageID").value;
     var ageRisk;
     
-
+    // Age Risk
+    
     if(age < 30) {
       ageRisk = 0;
     }
