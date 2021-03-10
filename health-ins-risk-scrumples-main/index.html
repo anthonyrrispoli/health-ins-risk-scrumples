@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author: Tony Rispoli, Bileg Baatar
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Health Insurance Risk Calculator</title>
+    <script src="health-ins-risk-scrumples.js"></script>
+</head>
+<body>
+    <h1>Health Insurance Risk</h1>
+    <p>-----------------------------------------------------------</p>
+    <!-- Age, height, weight, systolic, diastolic, history-->
+    <p>Enter the person's age in years: </p>
+    <input id="ageID" type="number" min="12" max="99">
+    <p>Enter the person's height in inches: </p>
+    <input id="heightID" type="number" min="54" max="84">
+    <p>Enter the person's weight in pounds: </p>
+    <input id="weightID" type="number" min="80" max="400">
+    <p>Enter the person's systolic blood pressure: </p>
+    <input id="sbpID" type="number" min="50" max="250">
+    <p>Enter the person's diastolic blood pressure: </p>
+    <input id="dpdID" type="number" min="25" max="200">
+    <p>Does the person have a family history of ...</p>
+
+    <!-- Diabetes-->
+    <p>Diabetes? </p>
+    <input type="radio" id="yesDiabetes" name="diabetes_name" value="yes">
+    <label for="diabetes">Yes</label><br>
+    <input type="radio" id="noDiabetes" name="diabetes_name" value="no">
+    <label for="diabetes">No</label><br>
+
+    <!-- Cancer-->
+    <p>Cancer? </p>
+    <input type="radio" id="yesCancer" name="cancer_name" value="yes">
+    <label for="cancer">Yes</label><br>
+    <input type="radio" id="noCancer" name="cancer_name" value="no">
+    <label for="cancer">No</label><br>
+
+    <!-- Alzheimers-->
+    <p>Alzheimers? </p>
+    <input type="radio" id="yesAlzheimers" name="alzheimers_name" value="yes">
+    <label for="alzheimers">Yes</label><br>
+    <input type="radio" id="noAlzheimers" name="alzheimers_name" value="no">
+    <label for="alzheimers">No</label><br>
+
+    <!-- Button to perform calculations-->
+    <br><button type="button" onclick="doCalculations()">Do Calculations</button><br><br>
+
+    <!--This needs to use javascript to show results after click.-->
+    <p>Risk scores</p>
+    <p>Age: <span id="ageRiskID"></span> </p>
+    <p>Body-Mass: <span id="indexID"></span></p>
+    <p>Blood Pressure: </p>
+    <p>Family History: </p>
+
+    <p>Based on these scores, the person is: </p>
+
+</body>
+</html>
