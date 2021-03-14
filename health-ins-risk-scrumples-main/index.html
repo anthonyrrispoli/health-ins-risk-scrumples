@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <!--
-    Author: Tony Rispoli, Bileg Baatar
+    Author: Tony Rispoli, Bileg Baatar, Henri Alvarez
 
 -->
 <head>
@@ -22,29 +22,17 @@
     <p>Enter the person's systolic blood pressure: </p>
     <input id="sbpID" type="number" min="50" max="250">
     <p>Enter the person's diastolic blood pressure: </p>
-    <input id="dpdID" type="number" min="25" max="200">
+    <input id="dbpID" type="number" min="25" max="200">
     <p>Does the person have a family history of ...</p>
 
-    <!-- Diabetes-->
-    <p>Diabetes? </p>
-    <input type="radio" id="yesDiabetes" name="diabetes_name" value="yes">
-    <label for="diabetes">Yes</label><br>
-    <input type="radio" id="noDiabetes" name="diabetes_name" value="no">
-    <label for="diabetes">No</label><br>
-
-    <!-- Cancer-->
-    <p>Cancer? </p>
-    <input type="radio" id="yesCancer" name="cancer_name" value="yes">
-    <label for="cancer">Yes</label><br>
-    <input type="radio" id="noCancer" name="cancer_name" value="no">
-    <label for="cancer">No</label><br>
-
-    <!-- Alzheimers-->
-    <p>Alzheimers? </p>
-    <input type="radio" id="yesAlzheimers" name="alzheimers_name" value="yes">
-    <label for="alzheimers">Yes</label><br>
-    <input type="radio" id="noAlzheimers" name="alzheimers_name" value="no">
-    <label for="alzheimers">No</label><br>
+    <form action="/action_page.php">
+        <input type="checkbox" id="diabetes">
+        <label for="diabetes"> Diabetes?</label><br>
+        <input type="checkbox" id="cancer">
+        <label for="cancer"> Cancer?</label><br>
+        <input type="checkbox" id="alzheimers">
+        <label for="alzheimers"> Alzheimers?</label><br><br>
+      </form> 
 
     <!-- Button to perform calculations-->
     <br><button type="button" onclick="doCalculations()">Do Calculations</button><br><br>
@@ -52,11 +40,11 @@
     <!--This needs to use javascript to show results after click.-->
     <p>Risk scores</p>
     <p>Age: <span id="ageRiskID"></span> </p>
-    <p>Body-Mass: <span id="indexID"></span></p>
-    <p>Blood Pressure: </p>
-    <p>Family History: </p>
+    <p>Body-Mass: <span id="bmiID"></span></p>
+    <p>Blood Pressure: <span id = "bpID"></span> </p>
+    <p>Family History: <span id="familyID"></span></p>
 
-    <p>Based on these scores, the person is: </p>
+    <p>Based on these scores, the person is: <span id="riskID"></span> </p>
 
 </body>
 </html>
